@@ -37,6 +37,7 @@ export const getStaticProps: GetStaticProps<PostDetailProps> = async (
     props: {
       post: data,
     },
+    revalidate: 6,
   };
 };
 // ! Cái này chạy 1 lần thôi để truyền params vào cái props ở trên để nó chạy bằng số lượng params được truyền vào
