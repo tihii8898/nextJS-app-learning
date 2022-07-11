@@ -18,6 +18,7 @@
     "paths": {
       "~/components/*":["./components/*"],
       "~/models/*":["./models/*"],
+      "~/hooks/*":["./hooks/*"],
       "~/api/*":["./api-client/*"],
     }
   },
