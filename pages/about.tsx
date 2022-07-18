@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic';
 
 import { useRouter } from 'next/router';
 import { AdminLayout, MainLayout } from '~/components/layout';
+import { Box, Typography } from '@mui/material';
 
 const Header = dynamic(() => import('~/components/common/Header'), { ssr: false });
 
@@ -39,10 +40,20 @@ export default function AboutPage(props: AboutPageProps) {
   // const post = postList.filter((post: any) => post.id == page);
 
   return (
-    <div>
-      <h2>This is About Page</h2>
+    <Box>
+      <Typography
+        component="h1"
+        variant="h3"
+        color="secondary"
+        sx={{
+          fontWeight: 'bold',
+        }}
+      >
+        About Page
+      </Typography>
+
       <Header />
-    </div>
+    </Box>
   );
 }
 
