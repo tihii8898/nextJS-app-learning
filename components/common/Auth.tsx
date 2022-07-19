@@ -7,7 +7,7 @@ export interface AuthProps {
   children: any;
 }
 
-export default function Auth({ children }: AuthProps) {
+export function Auth({ children }: AuthProps) {
   const { profile, firstLoading }: any = useAuth();
   const router = useRouter();
 
