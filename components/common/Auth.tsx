@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router';
-import * as React from 'react';
-import { useAuth } from '~/hooks/use-auth';
 import { useEffect } from 'react';
+import { useAuth } from '~/hooks/use-auth';
 
 export interface AuthProps {
   children: any;
