@@ -1,9 +1,8 @@
-import * as React from 'react';
-import { LayoutProps } from '~/models/common';
 import Link from 'next/link';
-import { Auth } from '../common/index';
-import { useAuth } from '~/hooks/use-auth';
 import { useRouter } from 'next/router';
+import { useAuth } from '~/hooks/use-auth';
+import { LayoutProps } from '~/models/common';
+import { Auth } from '../common/index';
 
 export function AdminLayout({ children }: LayoutProps) {
   const { profile, logout } = useAuth();
