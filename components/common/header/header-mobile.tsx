@@ -37,7 +37,7 @@ export function HeaderMobile(props: HeaderMobileProps) {
           >
             {ROUTE_LIST.map((route) => (
               <Link href={route.path} key={route.path} passHref>
-                <MuiLink>{route.label}</MuiLink>
+                <MuiLink fontWeight="medium">{route.label}</MuiLink>
               </Link>
             ))}
           </SwipeableDrawer>
