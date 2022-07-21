@@ -43,7 +43,13 @@ export function Hero(props: HeroProps) {
               borderRadius: '50%',
             }}
           >
-            <Image src={bob} layout="responsive" alt="avatar" style={{ borderRadius: '50%' }} />
+            <Image
+              src={bob}
+              layout="responsive"
+              alt="avatar"
+              style={{ borderRadius: '50%' }}
+              priority
+            />
           </Box>
         </Stack>
       </Container>

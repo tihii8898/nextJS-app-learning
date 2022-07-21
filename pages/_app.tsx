@@ -1,5 +1,5 @@
 import { SWRConfig } from 'swr';
-import axiosClient from '~/api/axios-client';
+import axiosClient from '~/api-client/';
 import { EmptyLayout } from '~/components/layout';
 import { AppPropsWithLayout } from '../models';
 import '../styles/globals.css';
@@ -7,7 +7,7 @@ import '../styles/globals.css';
 import { CacheProvider } from '@emotion/react';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
-import { createEmotionCache, theme } from '~/utils/index';
+import { createEmotionCache, theme } from '~/utils';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();

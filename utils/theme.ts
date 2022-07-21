@@ -13,8 +13,8 @@ export let theme = createTheme({
       light: '#8695A4',
     },
     secondary: {
-      main: '#00A8CC',
-      light: '#EDF7FA',
+      main: '#EDF7FA',
+      light: '#00A8CC',
     },
 
     error: {

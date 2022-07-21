@@ -16,12 +16,9 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "~/components/*":["./components/*"],
-      "~/models/*":["./models/*"],
-      "~/hooks/*":["./hooks/*"],
-      "~/api/*":["./api-client/*"],
-      "~/utils/*":["./utils/*"],
-      "~/images/*":["./images/*"],
+      "~/api/*": ["./api-client/*"],
+
+      "~/*": ["./*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
