@@ -5,7 +5,7 @@ export interface Author {
   avatarUrl: string;
 }
 
-export interface Post {
+export interface Blog {
   id: number | string;
   title: string;
   publishedDate: string;
@@ -14,4 +14,7 @@ export interface Post {
 
   slug: string;
   author?: Author;
+
+  mdContent?: string;
+  htmlContent?: string;
 }
